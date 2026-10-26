@@ -2,6 +2,10 @@
 
 Membuat survey untuk perokok menggunakan form tags, input dan button
 
-**Preview Screen Record**
+**Survey Page (Screen Record)**
 
 ![survey](survey.gif)
+
+**Data Page (Screenshot)**
+
+![data](data.png)
