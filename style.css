@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container > form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.short, .radio, .multi {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 640px;
+    height: 178px;
+    align-items: center;
+}
+
+.short {
+    display: grid;
+    grid-row: auto;
+    align-content: center;
+    gap: 30px;
+    align-items: start;
+    padding: 0 40px;
+}
+
+.short > input {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 50%;
+}
+
+.container > form > div:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* button[type:"submit"] {
+    
+}
+
+button[type:"reset"] {
+
+} */
+
+
+a {
+    display: flex;
+    justify-content: center;
+}

@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <form action="data.html">
-            <div>
-                <label for="nama">Siapa nama anda?</label><br>
-                <input type="text" name="nama" id="nama"><br>    
+            <div class="short">
+                <label for="nama">Siapa nama anda? <span class="red">*</span></label>
+                <input type="text" name="nama" id="nama" placeholder="Your answer">
             </div>
-            <div>
-                <label for="umur">Berapa umur anda?</label><br>
-                <input type="number" name="umur" id="umur"><br>
+            <div class="short">
+                <label for="umur">Berapa umur anda? <span class="red">*</span></label>
+                <input type="number" name="umur" id="umur" placeholder="Your answer">
             </div>
-            <div>
-                <label for="m">Apa jenis kelamin anda?</label><br>
+            <div class="radio">
+                <label for="m">Apa jenis kelamin anda? <span class="red">*</span></label>
                 <input type="radio" name="gender" value="m" id="m">
                 <label for="m">Laki-laki</label>
                 <input type="radio" name="gender" value="f" id="f">
                 <label for="f">Perempuan</label>
             </div>
-            <div>
-                <label for="y">Apakah anda perokok?</label><br>
+            <div class="radio">
+                <label for="y">Apakah anda perokok? <span class="red">*</span></label>
                 <input type="radio" name="smoke" value="y" id="y">
                 <label for="y">Ya</label>
                 <input type="radio" name="smoke" value="n" id="n">
                 <label for="n">Tidak</label>
             </div>
-            <div>
-                <label for="gg">Jika anda perokok, rokok apa yang pernah anda coba?</label><br>
+            <div class="multi">
+                <label for="gg">Jika anda perokok, rokok apa yang pernah anda coba? <span class="red">*</span></label>
                 <input type="checkbox" name="cigs" id="gg">
-                <label for="gg">Gudang Garam Filter</label><br>
+                <label for="gg">Gudang Garam Filter</label>
                 <input type="checkbox" name="cigs" id="ls">
-                <label for="ls">Lucky Strike</label><br>
+                <label for="ls">Lucky Strike</label>
                 <input type="checkbox" name="cigs" id="mb">
-                <label for="mb">Marlboro</label><br>
+                <label for="mb">Marlboro</label>
                 <input type="checkbox" name="cigs" id="es">
                 <label for="es">Esse</label>
             </div>
             <div>
-                <button type="submit">Kirim</button>
-                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear form</button>
             </div>
         </form>
     </div>
-    <br>
     <div>
         <a href="data.html">Data Responden Sebelumnya</a>
     </div>
