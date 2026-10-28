@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .short, .radio, .multi {
@@ -24,22 +24,30 @@ body {
     border-radius: 20px;
     width: 640px;
     height: 178px;
-    align-items: center;
-}
-
-.short {
     display: grid;
     grid-row: auto;
     align-content: center;
-    gap: 30px;
-    align-items: start;
     padding: 0 40px;
+}
+
+.short {
+    gap: 30px;
 }
 
 .short > input {
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     width: 50%;
+}
+
+.radio {
+    gap: 15px;
+}
+
+.multi {
+    height: auto;
+    padding: 40px 40px;
+    gap: 15px;
 }
 
 .container > form > div:last-child {

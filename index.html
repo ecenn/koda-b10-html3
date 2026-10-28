@@ -19,28 +19,44 @@
             </div>
             <div class="radio">
                 <label for="m">Apa jenis kelamin anda? <span class="red">*</span></label>
-                <input type="radio" name="gender" value="m" id="m">
-                <label for="m">Laki-laki</label>
-                <input type="radio" name="gender" value="f" id="f">
-                <label for="f">Perempuan</label>
+                <div class="choice">
+                    <input type="radio" name="gender" value="m" id="m">
+                    <label for="m">Laki-laki</label>    
+                </div>
+                <div class="choice">
+                    <input type="radio" name="gender" value="f" id="f">
+                    <label for="f">Perempuan</label>
+                </div>
             </div>
             <div class="radio">
                 <label for="y">Apakah anda perokok? <span class="red">*</span></label>
-                <input type="radio" name="smoke" value="y" id="y">
-                <label for="y">Ya</label>
-                <input type="radio" name="smoke" value="n" id="n">
-                <label for="n">Tidak</label>
+                <div class="choice">
+                    <input type="radio" name="smoke" value="y" id="y">
+                    <label for="y">Ya</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="smoke" value="n" id="n">
+                    <label for="n">Tidak</label>
+                </div>
             </div>
             <div class="multi">
                 <label for="gg">Jika anda perokok, rokok apa yang pernah anda coba? <span class="red">*</span></label>
-                <input type="checkbox" name="cigs" id="gg">
-                <label for="gg">Gudang Garam Filter</label>
-                <input type="checkbox" name="cigs" id="ls">
-                <label for="ls">Lucky Strike</label>
-                <input type="checkbox" name="cigs" id="mb">
-                <label for="mb">Marlboro</label>
-                <input type="checkbox" name="cigs" id="es">
-                <label for="es">Esse</label>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="gg">
+                    <label for="gg">Gudang Garam Filter</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="ls">
+                    <label for="ls">Lucky Strike</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="mb">
+                    <label for="mb">Marlboro</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="es">
+                    <label for="es">Esse</label>
+                </div>
             </div>
             <div>
                 <button type="submit">Submit</button>
