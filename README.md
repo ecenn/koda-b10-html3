@@ -9,3 +9,9 @@ Membuat survey untuk perokok menggunakan form tags, input dan button
 **Data Page (Screenshot)**
 
 ![data](data.png)
+
+## UPDATE: CSS Styling
+
+Membuat style agar tampilan menyerupai style Google Form
+
+![survey css](update-css.png)
