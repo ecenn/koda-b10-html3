@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 
 .red {
@@ -55,16 +56,35 @@ body {
     justify-content: space-between;
 }
 
-/* button[type:"submit"] {
-    
+.submit-reset {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
 }
 
-button[type:"reset"] {
+.submit-reset > button:first-child {
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-size: x-small;
+}
 
-} */
-
+.submit-reset > button:last-child {
+    border: 0;
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke;
+    color: blue;
+    font-size: x-small;
+}
 
 a {
     display: flex;
     justify-content: center;
+    font-size: small;
+    font-weight: lighter;
 }
