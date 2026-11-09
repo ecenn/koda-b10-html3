@@ -20,7 +20,7 @@
         </div>
     </header>
     <div class="container">
-        <form action="data.html">
+        <form action="data.html" id="form-perokok">
             <div class="short">
                 <label for="nama">Siapa nama anda? <span class="red">*</span></label>
                 <input type="text" name="nama" id="nama" placeholder="Your answer">
@@ -79,5 +79,16 @@
     <div>
         <a href="data.html">Data Responden Sebelumnya</a>
     </div>
+
+    <script>
+        const form = document.getElementById("form-perokok")
+        const storage = []
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault()
+            const response = event.target
+            window.localStorage.setItem("respondent", response)
+        })
+    </script>
 </body>
 </html>
