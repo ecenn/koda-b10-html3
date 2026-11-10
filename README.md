@@ -10,8 +10,14 @@ Membuat survey untuk perokok menggunakan form tags, input dan button
 
 ![data](data.png)
 
-## UPDATE: CSS Styling
+## CSS Styling
 
 Membuat style agar tampilan menyerupai style Google Form
 
 ![survey css](update-css.png)
+
+## UPDATE: Refactor Using Tailwind
+
+Membuat ulang style yang sama dengan menggunakan Tailwind
+
+![survey tailwind css](survey-tailwind.png)
