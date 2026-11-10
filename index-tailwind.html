@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey Perokok - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100" w-full flex flex-col gap-2>
+    <header class="flex w-full items-center justify-center pt-2">
+        <div class="flex flex-col justify-center gap-2 w-5/12 bg-white border border-gray-300 rounded-2xl overflow-hidden">
+            <div class="bg-blue-600 h-[20px] w-full"></div>
+            <h1 class="px-10 py-2 text-3xl font-bold">Form Survey Perokok</h1>
+            <p class="px-10 pb-1 text-black-400">Isi form dibawah ini dengan jawaban yang sebenarnya.</p>
+            <div class="text-sm flex justify-between px-10 py-2 border-y border-gray-300">
+                <p><span class="text-sm font-bold text-gray-800">example@gmail.com</span> <span class="text-blue-600">Switch Account</span></p>
+                <p class="text-gray-400">cloud</p>
+            </div>
+            <p class="text-red-600 px-10 py-0 pb-2">* Indicates required question</p>
+        </div>
+    </header>
+    <div class="w-full flex justify-center items-center">
+        <form action="data.html" id="form-perokok" class="w-5/12 flex flex-col gap-2 pt-2">
+            <div class="flex flex-col justify-center gap-2 bg-white border border-gray-300 rounded-2xl p-10">
+                <label for="nama">Siapa nama anda? <span class="text-red-600">*</span></label>
+                <input type="text" name="nama" id="nama" placeholder="Your answer" class="border-b w-1/2 text-sm">
+            </div>
+            <div class="flex flex-col justify-center gap-2 bg-white border border-gray-300 rounded-2xl p-10">
+                <label for="umur">Berapa umur anda? <span class="red">*</span></label>
+                <input type="number" name="umur" id="umur" placeholder="Your answer" class="border-b w-1/2 text-sm">
+            </div>
+            <div class="flex flex-col justify-center gap-2 bg-white border border-gray-300 rounded-2xl p-10">
+                <label for="m">Apa jenis kelamin anda? <span class="red">*</span></label>
+                <div class="choice">
+                    <input type="radio" name="gender" value="m" id="m">
+                    <label for="m">Laki-laki</label>    
+                </div>
+                <div class="choice">
+                    <input type="radio" name="gender" value="f" id="f">
+                    <label for="f">Perempuan</label>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center gap-2 bg-white border border-gray-300 rounded-2xl p-10">
+                <label for="y">Apakah anda perokok? <span class="red">*</span></label>
+                <div class="choice">
+                    <input type="radio" name="smoke" value="y" id="y">
+                    <label for="y">Ya</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="smoke" value="n" id="n">
+                    <label for="n">Tidak</label>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center gap-2 bg-white border border-gray-300 rounded-2xl p-10">
+                <label for="gg">Jika anda perokok, rokok apa yang pernah anda coba? <span class="red">*</span></label>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="gg" value="gg">
+                    <label for="gg">Gudang Garam Filter</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="ls" value="ls">
+                    <label for="ls">Lucky Strike</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="mb" value="mb">
+                    <label for="mb">Marlboro</label>
+                </div>
+                <div class="choice">
+                    <input type="checkbox" name="cigs" id="es" value="es">
+                    <label for="es">Esse</label>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <button type="submit" class="border bg-blue-600 py-2 px-4 rounded-lg text-white text-sm">Submit</button>
+                <button type="reset" class="text-blue-600 text-sm py-2 px-4">Clear form</button>
+            </div>
+        </form>
+    </div>
+    <div class="w-full flex justify-center items-center">
+        <a href="data.html" class="text-blue-600 underline py-4">Data Responden Sebelumnya</a>
+    </div>
+
+    <script>
+        const form = document.querySelector("form")
+        const storage = []
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const response = new FormData(e.target)
+            // const row = storage.forEach()
+            console.log([...response.keys()])
+            console.log(response.getAll("cigs"))
+            
+            // window.localStorage.setItem("respondent", response)
+        })
+    </script>
+</body>
+</html>
